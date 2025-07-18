@@ -1,30 +1,55 @@
 # 🔐 AES ECB Encryption & Decryption Tool (Python)
 
-Tool sederhana untuk melakukan **enkripsi dan dekripsi** teks menggunakan algoritma **AES-128 ECB** berbasis Python. Cocok buat belajar kriptografi dasar atau kebutuhan pribadi.
-
-## ✨ Fitur
-- 🔒 Enkripsi teks menggunakan AES-128 ECB
-- 🔓 Dekripsi teks terenkripsi (Base64)
-- 📝 Input bisa dari:
-  - Ketikan manual
-  - File `.txt`
-- 📄 Output dekripsi bisa:
-  - Tampil di terminal
-  - Disimpan ke file `.txt`
-- 🔁 Bisa diulang terus sampai ketik `exit` atau `0`
+Tool sederhana berbasis Python untuk mengenkripsi dan mendekripsi teks menggunakan algoritma **AES-128 ECB**. Mendukung input teks langsung maupun dari file `.txt`, serta output ke terminal atau disimpan kembali ke file.
 
 ---
 
-## ⚙️ Cara Install & Jalankan
+## ✨ Fitur
 
-### 1. **Clone Repo**
-git clone https://github.com/username/aes_ecb_tool.git
-cd AES
+✅ Enkripsi teks menggunakan AES-128 (ECB Mode)  
+✅ Dekripsi ciphertext (format Base64)  
+✅ Input teks bisa dari:
+- Ketikan manual
+- File `.txt`
 
-### 2. **Install Dependency**
+✅ Output dekripsi bisa:
+- Tampil langsung di terminal
+- Disimpan ke file `.txt`
+
+✅ Menu interaktif dengan pilihan:
+- `1` Enkripsi
+- `2` Dekripsi
+- `0` atau `exit` untuk keluar
+
+---
+
+## 🧰 Persyaratan
+
+- Python 3.x
+- Library: `pycryptodome`
+
+Instalasi library:
+```bash
 pip install pycryptodome
 
-### 3. **Run Program**
+🚀 Cara Menjalankan
+1. Clone Repo
+git clone https://github.com/username/aes-tools.git
+cd aes-tool
+2. Jalankan Program
 python AES.py
+🧪 Contoh Penggunaan
+🔒 Enkripsi
+Pilih menu 1
+Masukkan key (16 karakter)
+Pilih input dari file (Y) atau manual (N)
+Jika dari file, masukkan path file .txt
+Hasil enkripsi (Base64) akan ditampilkan
+🔓 Dekripsi
+Pilih menu 2
+Masukkan key yang sama (16 karakter)
+Pilih input dari file (Y) atau manual (N)
+Jika dari file, masukkan path file .txt
+Pilih output ke file (Y) atau hanya tampil (N)
 
 
